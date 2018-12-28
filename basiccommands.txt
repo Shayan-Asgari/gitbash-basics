@@ -1,0 +1,29 @@
+Step 1. Create a repository on your github account.
+Step 2. Check the box that asks to initialize a README.
+Step 3. Now you should be at a new page. Press the green button, "Clone or download". A link should pop up; copy it.
+Step 4. Make sure to have Git installed/updated using this link:https://git-scm.com/downloads. 
+Step 5. Open GitBash (Should be downloaded on your computer)
+Step 6. Type: git clone " " (In parentheses should go the link that was copied from "Clone or download".
+Step 7. Locate the cloned file in your file explorer. Type pwd in gitbash to see where it was downloaded. 
+If placed within a directory type into gitbash: cd "WHATEVER YOUR FILE NAME IS"(Without quotes). If located correctly
+a '(master)' should be displayed on the gitbash terminal.
+Step 7. Type: git status ---> Note: git status shows the working tree status.
+Step 8. Type: ls ----> Note: ls lists out files in that cloned file. Should just be README.md if steps were followed correctly.
+Step 9. Now drag any files, even folders to that file that was cloned.
+Step 10. Type: git status ----> Note: Now, you should see the file names in the git status message
+Step 11. Type: git add "WHATEVER THE FILE NAME IS" <--- This adds the file to staging area
+Later the staging area will be used to commit files when you type git commit.
+Step 12: Type: git commit -m 'WHATEVER MESSAGE YOU WANT'(***single quotes must be inclued in m- which means message)
+git commit adds your changes to the local version control database BUT NOT to the github remote server.
+Step 13: Type: git log ----> Note: git log Will show the history of all your commit history
+Step 14: Type git push ---> Will now push the file(s) to the github remote server.
+Step 15: Reload the browser that has the github repository and you should see the new file added
+
+
+Lets say that you made changes to that file in an IDE such as Eclipse and is different from the one in the git repisitory, 
+and now you want to update those changes. 
+Step 1: Now that you have made changes to the file
+Type: git status --> you should see gitbash saying modified: **YOUR FILE NAME**
+Step 2: Type: git add "WHATEVER THE FILE NAME IS" <--- This adds the file to staging area
+Later the staging area will be used to commit files when you type git commit. 
+Step 3: Type: git difftool HEAD ---> shows differences between changes and previous version
